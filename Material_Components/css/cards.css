@@ -1,0 +1,28 @@
+cards * {
+	background-color:var(--md-sys-color-on-primary-container);
+}
+
+.cards {
+	border-radius:27px;
+
+	padding:8px;
+
+	display:flex;
+	flex-direction:row;
+
+	margin-bottom:16px;
+
+	transition: transform .2s; /* Animation */
+}
+
+.expandCard:hover {
+	transform: scale(1.05);
+}
+
+.cards:nth-child(even) {
+	background-color:var(--md-sys-color-tertiary-container);
+}
+
+.cards:nth-child(odd) {
+	background-color:var(--md-sys-color-primary-container);
+}
