@@ -16,7 +16,7 @@ class NavigationTabs extends HTMLElement {
 		holder.style.display = 'flex';
 		holder.style.flexDirection = 'row';
 
-		//select first option
+		//select first options
 		this.firstChild.click();
 	}
 }
