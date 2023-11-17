@@ -15,6 +15,9 @@ class NavigationBar extends HTMLElement {
 		holder.style.marginRight = '0px';
 		holder.style.display = 'flex';
 		holder.style.flexDirection = 'column';
+
+		//select first option 
+		this.firstChild.click();
   }
 }
 

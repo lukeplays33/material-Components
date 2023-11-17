@@ -15,6 +15,9 @@ class NavigationTabs extends HTMLElement {
 		holder.style.borderRadius = '100px';
 		holder.style.display = 'flex';
 		holder.style.flexDirection = 'row';
+
+		//select first option
+		this.firstChild.click();
 	}
 }
 
