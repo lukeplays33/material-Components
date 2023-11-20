@@ -12,6 +12,8 @@ cards * {
 
 	margin-bottom:16px;
 
+	color:var(--md-sys-color-on-primary-on-container);
+
 	transition: transform .2s; /* Animation */
 }
 
