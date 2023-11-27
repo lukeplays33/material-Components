@@ -59,10 +59,12 @@ input[type="color"], .colorpicker {
 	background-color:TRANSPARENT;
 	padding:0px;
 }
+
 input[type="color"]::-webkit-color-swatch-wrapper {
 	padding: 0;
 		border-radius:50px;
 }
+
 input[type="color"]::-webkit-color-swatch {
 	border: none;
 		border-radius:50px;
@@ -75,4 +77,16 @@ input, textarea {
 	color:var(--md-sys-color-on-surface-variant);
 
 	padding:8px;
+}
+
+input[type='submit'], input[type='button'] {
+	background-color:var(--md-sys-color-primary);
+	color:var(--md-sys-color-on-primary);
+	border-radius:50px;
+	border-width:0px;
+	padding:14px;
+	font-size:16px;
+
+	height:max-content;
+	width:min-content;
 }
