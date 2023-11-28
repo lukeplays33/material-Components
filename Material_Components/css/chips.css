@@ -1,0 +1,67 @@
+footer .chipRounded {
+	display:static;
+
+	background-color:var(--md-sys-color-primary);
+
+	padding:8px 16px;
+
+	border-radius:50px;
+
+	color:var(--md-sys-color-on-primary);
+}
+
+.chipRounded {
+	display:static;
+
+	background-color:var(--md-sys-color-primary-container);
+
+	padding:8px 16px;
+
+	border-radius:50px;
+
+	color:var(--md-sys-color-on-primary-container);
+}
+
+.chipSquared {
+	display:static;
+
+	background-color:var(--md-sys-color-primary-container);
+
+	padding:8px 16px;
+
+	border-radius:10px;
+
+	color:var(--md-sys-color-on-primary-container);
+}
+
+footer .chipSquared {
+	display:static;
+
+	background-color:var(--md-sys-color-primary);
+
+	padding:8px 16px;
+
+	border-radius:10px;
+
+	color:var(--md-sys-color-on-primary);
+}
+
+.chipRounded:hover {
+	background-color:var(--md-sys-color-tertiary-container);
+	color:var(--md-sys-color-on-tertiary-container);
+}
+
+footer .chipRounded:hover {
+	background-color:var(--md-sys-color-tertiary);
+	color:var(--md-sys-color-on-tertiary);
+}
+
+.chipSquared:hover {
+	background-color:var(--md-sys-color-tertiary-container);
+	color:var(--md-sys-color-on-tertiary-container);
+}
+
+footer .chipSquared:hover {
+	background-color:var(--md-sys-color-tertiary);
+	color:var(--md-sys-color-on-tertiary);
+}

@@ -2,6 +2,8 @@
 @import './css/dialog.css';
 @import './css/cards.css';
 @import './css/shapes.css';
+@import './css/footer.css';
+@import './css/chips.css';
 
 * {
 	font-family:sans-serif;
@@ -281,106 +283,6 @@ a {
 	color:var(--md-sys-color-on-surface-variant);
 	text-decoration:none;
 	margin:auto 8px;
-}
-
-footer {
-	background-color:var(--md-sys-color-primary-container);
-	
-	border-radius:200px;
-
-	padding:45px;
-
-	display:flex;
-
-	margin:8px;
-}
-
-hr {
-	
-	text-decoration:wavy line-through;
-	text-decoration-color:var(--md-sys-color-tertiary);
-	
-	width:1000%;
-
-	color:TRANSPARENT;
-}
-
-hr::before {
-	content:'Hello there this is some text that i use to create this divider it is very long yes yes, but not visible to user how that come you ask? well the font is no bigger than 0px wich means the user cannot see this font, funny right? well imma make this text even longer why? soo that this divider also works on a bigger screen like your TV but not only that then itll also work on some random screen that are even BIGGER than a normal TV';
-
-		height:20px !important;
-
-	overflow:hidden;
-
-	display:block;
-}
-
-.chipRounded {
-	display:static;
-	
-	background-color:var(--md-sys-color-primary-container);
-
-	padding:8px 16px;
-
-	border-radius:50px;
-
-	color:var(--md-sys-color-on-primary-container);
-}
-
-footer .chipRounded {
-	display:static;
-	
-	background-color:var(--md-sys-color-primary);
-
-	padding:8px 16px;
-
-	border-radius:50px;
-
-	color:var(--md-sys-color-on-primary);
-}
-
-.chipSquared {
-	display:static;
-	
-	background-color:var(--md-sys-color-primary-container);
-
-	padding:8px 16px;
-
-	border-radius:50px;
-
-	color:var(--md-sys-color-on-primary-container);
-}
-
-footer .chipSquared {
-	display:static;
-	
-	background-color:var(--md-sys-color-primary);
-
-	padding:8px 16px;
-
-	border-radius:50px;
-
-	color:var(--md-sys-color-on-primary);
-}
-
-.chipRounded:hover {
-	background-color:var(--md-sys-color-tertiary-container);
-	color:var(--md-sys-color-on-tertiary-container);
-}
-
-footer .chipRounded:hover {
-	background-color:var(--md-sys-color-tertiary);
-	color:var(--md-sys-color-on-tertiary);
-}
-
-.chipSquared:hover {
-	background-color:var(--md-sys-color-tertiary-container);
-	color:var(--md-sys-color-on-tertiary-container);
-}
-
-footer .chipSquared:hover {
-	background-color:var(--md-sys-color-tertiary);
-	color:var(--md-sys-color-on-tertiary);
 }
 
 .descriptionHeader {
