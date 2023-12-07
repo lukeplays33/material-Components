@@ -8,4 +8,10 @@ function initSettings (json) {
 	}
 }
 
+window.onload = function () {
+	for(i of document.getElementsByClassName('navigator')) {
+		i.firstChild.click();
+	}
+}
+
 export { initSettings }

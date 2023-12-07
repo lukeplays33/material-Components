@@ -5,7 +5,7 @@ class NavigationBar extends HTMLElement {
     super();
 
 		let holder = this;
-		holder.className = 'navigationbarHolder'
+		holder.className = 'navigationbarHolder navigator';
 		
 		holder.style.width = '90px';
 		holder.style.height = 'calc(100% - 24px)';
@@ -16,8 +16,6 @@ class NavigationBar extends HTMLElement {
 		holder.style.display = 'flex';
 		holder.style.flexDirection = 'column';
 
-		//select first options 
-		this.firstChild.click();
   }
 }
 

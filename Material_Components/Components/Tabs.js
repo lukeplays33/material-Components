@@ -5,7 +5,7 @@ class NavigationTabs extends HTMLElement {
 		super();
 
 		let holder = this;
-		holder.className = 'navigationTabsHolder'
+		holder.className = 'navigationTabsHolder navigator';
 
 		holder.style.minHeight = '45px';
 		holder.style.width = '100%';
@@ -16,8 +16,6 @@ class NavigationTabs extends HTMLElement {
 		holder.style.display = 'flex';
 		holder.style.flexDirection = 'row';
 
-		//select first options
-		this.firstChild.click();
 	}
 }
 
