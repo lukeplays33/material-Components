@@ -1,5 +1,5 @@
 import { initSettings } from './js/initFunctions.js';
-import { generateColors } from './js/materilaColorGen.js';
+import { generateColors } from './js/materialColorGen.js';
 
 import { ColorPicker } from './Components/colorPicker.js';
 import { NavigationBar } from './Components/NavigationBar.js';
