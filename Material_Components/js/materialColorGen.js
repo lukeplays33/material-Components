@@ -1,4 +1,4 @@
-import { customWindow } from './js/windowAlternative.js';
+import { customWindow } from '../js/windowAlternative.js';
 
 import { Hct, argbFromHex, themeFromSourceColor, applyTheme  } from "https://cdn.skypack.dev/@material/material-color-utilities@0.2.4";
 
