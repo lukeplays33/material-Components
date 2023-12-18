@@ -303,3 +303,7 @@ img {
 	margin:8px;
 	padding:0px;
 }
+
+p {
+	color:var(--md-sys-color-on-background);
+}
