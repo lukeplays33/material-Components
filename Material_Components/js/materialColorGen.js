@@ -23,7 +23,7 @@ const systemDark = customWindow['darkTheme'];
 // Apply the theme to the body by updating custom properties for material tokens
 applyTheme(theme, {target: document.querySelector(':root'), dark: systemDark});
 
-	metaThemeColor = document.querySelector('meta [name="theme-color"]');
+	metaThemeColor = document.querySelector('meta[name="theme-color"]');
 		metaThemeColor.setAttribute("content",getComputedStyle(document.querySelector(':root')).getPropertyValue('--md-sys-color-primary'));
 
 	document.querySelector(':root').setPropertyValue('--md-sys-color-scource',metaThemeColor);
