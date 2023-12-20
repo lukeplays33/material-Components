@@ -26,7 +26,7 @@ applyTheme(theme, {target: document.querySelector(':root'), dark: systemDark});
 	metaThemeColor = document.querySelector('meta[name="theme-color"]');
 		metaThemeColor.setAttribute("content",getComputedStyle(document.querySelector(':root')).getPropertyValue('--md-sys-color-primary'));
 
-	document.querySelector(':root').setProperty('--md-sys-color-source',metaThemeColor);
+	document.querySelector(':root').style.setProperty('--md-sys-color-source',customWindow['themeColour']);
 	},1);
 }
 
