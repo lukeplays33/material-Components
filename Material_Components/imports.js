@@ -10,4 +10,4 @@ import { openColorPicker } from './Components/functions/colorPicker.js';
 
 generateColors();
 
-//export { initSettings, NavigationTabs, OptionItem, NavigationBar, ColorPicker, openColorPicker }
+export { initSettings, NavigationTabs, OptionItem, NavigationBar, ColorPicker, openColorPicker }
