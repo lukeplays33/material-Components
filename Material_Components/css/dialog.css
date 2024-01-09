@@ -1,5 +1,11 @@
-dialog {
-	background-color:var(--md-sys-color-background);
+.dialog {
+	background-color:color-mix( in srgb, var(--md-sys-color-primary-container) 80%, transparent);
+
+	min-width:450px;
+	min-height:500px;
+
+	max-width:850px;
+	max-height:800px;
 
 	margin:auto;
 
@@ -9,10 +15,24 @@ dialog {
 	flex-direction:row;
 }
 
-dialog::backdrop {
-	background: rgba(65,71,77, 0.25);
+.dialog-backdrop {
+	padding:16px;
+
+	background-color:color-mix( in srgb, var(--md-sys-color-primary-container) 50%, transparent);;
+
+	width:100%;
+	height:100%;
 }
 
-dialog h1, dialog h2, dialog h3, dialog h4, dialog h5, dialog h6 {
+
+.dialog *, .dialog {
 	color:var(--md-sys-color-on-background)
+}
+
+.dialogButtonHolder {
+	width:100%;
+
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
 }

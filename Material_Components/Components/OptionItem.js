@@ -38,7 +38,7 @@ class OptionItem extends HTMLElement {
 
 			this.className = 'selected';
 			try {
-			this.parentNode.onselectionchange(this.children[1].innerHTML);
+			this.parentNode.onchange(this.children[1].innerHTML);
 			}catch(e) {console.log(e)}
 		}
 
