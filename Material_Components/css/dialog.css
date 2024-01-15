@@ -38,3 +38,8 @@
 	flex-direction:row;
 	justify-content:flex-end;
 }
+
+.dialogInfoHolder {
+	display:flex;
+	flex-direction:row;
+}

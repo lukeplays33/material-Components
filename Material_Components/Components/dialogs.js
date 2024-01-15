@@ -20,7 +20,6 @@ customElements.define('pop-up', PopUp);
 
 			export {PopUp}
 
-
 function addBackdrop (element) {
 	let backdrop = document.createElement('div');
 	backdrop.className = 'dialog-backdrop';
@@ -35,12 +34,32 @@ function addBackdrop (element) {
 	document.body.appendChild(backdrop);
 }
 
+function addTitle_Message (element) {
+	let holder = document.createElement('div');
+	holder.className = 'dialogInfoHolder';
+
+	let title = document.createElement('p');
+	title.className = 'dialogTitle';
+	title.innerHTML = element.getAttribute('title');
+
+	let message = document.createElement('p');
+	message.className = 'dialogMessage';
+	message.innerHTML = element.getAttribute('message');
+
+	holder.appendChild(title);
+	holder.appendChild(message);
+
+	element.appendChild(holder);
+}
+
 function addButtons (element) {
 	let buttonHolder = document.createElement('div');
 	buttonHolder.className = 'dialogButtonHolder';
 
 	buttonHolder.appendChild(addAcceptButton(element));
 	buttonHolder.appendChild(addCancelButton(element));
+
+	element.appendChild(buttonHolder);
 }
 
 function addAcceptButton (element) {
@@ -77,6 +96,7 @@ function addBody (element) {
 	form.appendChild(body);
 
 	addButtons(form);
+	addTitle_Message(form);
 
 	element.appendChild(form);
 }
