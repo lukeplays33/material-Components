@@ -56,8 +56,8 @@ function addButtons (form, element) {
 	let buttonHolder = document.createElement('div');
 	buttonHolder.className = 'dialogButtonHolder';
 
-	buttonHolder.appendChild(addAcceptButton(form, element));
 	buttonHolder.appendChild(addCancelButton(element));
+	buttonHolder.appendChild(addAcceptButton(form, element));
 
 	form.appendChild(buttonHolder);
 }
@@ -90,6 +90,7 @@ function addCancelButton (element) {
 
 function addBody (element) {
 	let form = document.createElement('form');
+	form.style.width = '100%';
 
 	let body = document.createElement('div');
 	body.innerHTML = element.innerHTML;
