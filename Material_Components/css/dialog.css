@@ -1,5 +1,5 @@
 .dialog {
-	background-color:color-mix( in srgb, var(--md-sys-color-primary-container) 80%, transparent);
+	background-color:var(--md-sys-color-primary-container);
 
 	min-width:450px;
 	min-height:500px;
