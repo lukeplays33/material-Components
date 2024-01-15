@@ -50,7 +50,7 @@ function addAcceptButton (element) {
 
 	acceptButton.onclick = function (e) {
 		e.preventDefault();
-		closePopup(element, new Form(element););
+		closePopup(element, new Form(element));
 	}
 
 	return acceptButton;
