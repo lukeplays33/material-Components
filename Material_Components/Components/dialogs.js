@@ -34,7 +34,7 @@ function addBackdrop (element) {
 	document.body.appendChild(backdrop);
 }
 
-function addTitle_Message (element) {
+function addTitle_Message (form, element) {
 	let holder = document.createElement('div');
 	holder.className = 'dialogInfoHolder';
 
@@ -49,27 +49,28 @@ function addTitle_Message (element) {
 	holder.appendChild(title);
 	holder.appendChild(message);
 
-	element.appendChild(holder);
+	form.appendChild(holder);
 }
 
-function addButtons (element) {
+function addButtons (form, element) {
 	let buttonHolder = document.createElement('div');
 	buttonHolder.className = 'dialogButtonHolder';
 
-	buttonHolder.appendChild(addAcceptButton(element));
+	buttonHolder.appendChild(addAcceptButton(form, element));
 	buttonHolder.appendChild(addCancelButton(element));
 
-	element.appendChild(buttonHolder);
+	form.appendChild(buttonHolder);
 }
 
-function addAcceptButton (element) {
+function addAcceptButton (form, element) {
 	let acceptButton = document.createElement('input');
+	acceptButton.className = 'acceptButton';
 	acceptButton.type = 'submit';
 	acceptButton.innerHTML = element.getAttribute('acceptText');
 
 	acceptButton.onclick = function (e) {
 		e.preventDefault();
-		closePopup(element, new Form(element));
+		closePopup(element, new Form(form));
 	}
 
 	return acceptButton;
@@ -95,8 +96,8 @@ function addBody (element) {
 
 	form.appendChild(body);
 
-	addButtons(form);
-	addTitle_Message(form);
+	addButtons(form, element);
+	addTitle_Message(form, element);
 
 	element.appendChild(form);
 }
