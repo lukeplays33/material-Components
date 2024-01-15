@@ -56,6 +56,10 @@
   }
   
   .cancelButton:hover {
-	background-color:var(--md-sys-color-primary-container);
-	color:var(--md-sys-color-on-primary-container);
+	background-color:var(--md-sys-color-tertiary-container);
+	color:var(--md-sys-color-on-tertiary-container);
+  }
+
+  .dialogTitle {
+	font-size:25px;
   }

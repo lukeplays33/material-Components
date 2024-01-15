@@ -96,8 +96,8 @@ function addBody (element) {
 
 	form.appendChild(body);
 
-	addButtons(form, element);
 	addTitle_Message(form, element);
+	addButtons(form, element);
 
 	element.appendChild(form);
 }
