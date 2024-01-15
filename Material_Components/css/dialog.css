@@ -19,7 +19,7 @@
 .dialog-backdrop {
 	padding:16px;
 
-	background-color:color-mix( in srgb, var(--md-sys-color-primary-container) 50%, transparent);;
+	background-color:color-mix( in srgb, var(--md-sys-color-primary-container) 50%, transparent);
 
 	width:100%;
 	height:100%;
@@ -46,8 +46,8 @@
 }
 
 .cancelButton {
-	background-color:TRANSPARENT;
-	color:var(--md-sys-color-on-surface-variant);
+	background-color::color-mix( in srgb, var(--md-sys-color-tertiary) 30%, transparent);;
+	color:var(--md-sys-color-on-tertiary);
 	border-radius:50px;
 	width:100%;
 	border-width:0px;
