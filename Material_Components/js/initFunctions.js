@@ -13,7 +13,8 @@ function initSettings (json) {
 
 function onChange (key) {
 	if(key == 'darkTheme') {
-		alert(hexToRgbA(getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container')));
+		alert()
+		alert(hexToRgbA(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container')));
 		if(customWindow[key]) {
 			document.documentElement.style.backgroundColor = 'black';
 			document.body.style.backgroundColor = 'color-mix( in srgb, var(--md-sys-color-primary-container) 30%, transparent);';
