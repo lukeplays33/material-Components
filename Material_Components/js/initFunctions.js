@@ -1,5 +1,5 @@
 import { customWindow } from './windowAlternative.js';
-import { hexToRgbA } from '../utils/hexToRgba.js';
+import { hexToRgb } from '../utils/hexToRgba.js';
 
 let i;
 let r = document.querySelector(':root');
@@ -14,7 +14,7 @@ function initSettings(json) {
 }
 
 function onChange(key) {
-	let rgba = hexToRgbA(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'));
+	let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'));
 	if (key == 'darkTheme') {
 		alert(rgba);
 		if (customWindow[key]) {

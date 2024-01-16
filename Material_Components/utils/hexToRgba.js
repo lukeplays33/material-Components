@@ -1,4 +1,4 @@
-function hexToRgbA(hex){
+function hexToRgb(hex){
     var c;
     if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
         c= hex.substring(1).split('');
@@ -11,4 +11,4 @@ function hexToRgbA(hex){
     throw new Error('Bad Hex');
 }
 
-export { hexToRgbA }
+export { hexToRgb }
