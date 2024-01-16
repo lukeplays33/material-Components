@@ -13,10 +13,10 @@ function onChange (key) {
 	if(key == 'darkTheme') {
 		if(customWindow[key]) {
 			document.documentElement.style.backgroundColor = 'black';
-			//document.body.style.backgroundColor = 'color-mix( in srgb, var(--md-sys-color-primary-container) 30%, transparent);';
+			document.body.style.backgroundColor = 'color-mix( in srgb, var(--md-sys-color-primary-container) 30%, transparent);';
 		} else {
 			document.documentElement.style.backgroundColor = 'white';
-			//document.body.style.backgroundColor = 'color-mix( in srgb, var(--md-sys-color-tertiary-container) 40%, transparent);';
+			document.body.style.backgroundColor = 'color-mix( in srgb, var(--md-sys-color-tertiary-container) 40%, transparent);';
 		}
 	}
 }
