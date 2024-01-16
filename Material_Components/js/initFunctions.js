@@ -4,20 +4,21 @@ import { hexToRgbA } from '../utils/hexToRgba.js';
 let i;
 let r = document.querySelector(':root');
 
-function initSettings (json) {
-	window.onload = function () {
-	for(i of Object.keys(json)) {
-		customWindow[i] = json[i];
-		onChange(i);
-	}
-}
+function initSettings(json) {
+	window.setTimeout(function () { // find beter alternative for this
+		for (i of Object.keys(json)) {
+			customWindow[i] = json[i];
+			onChange(i);
+		}
+	}, 1500);
 }
 
-function onChange (key) {
+function onChange(key) {
+	alert(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'));
 	let rgba = hexToRgbA('#008dcd');
-	if(key == 'darkTheme') {
+	if (key == 'darkTheme') {
 		alert(rgba);
-		if(customWindow[key]) {
+		if (customWindow[key]) {
 			document.documentElement.style.backgroundColor = 'black';
 			document.body.style.backgroundColor = 'color-mix( in srgb, var(--md-sys-color-primary-container) 30%, transparent);';
 		} else {
@@ -28,7 +29,7 @@ function onChange (key) {
 }
 
 window.onload = function () {
-	for(i of document.getElementsByClassName('navigator')) {
+	for (i of document.getElementsByClassName('navigator')) {
 		i.firstChild.click();
 	}
 }
