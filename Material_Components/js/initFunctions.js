@@ -22,7 +22,7 @@ function onChange(key) {
 			document.body.style.backgroundColor = `rgba(${rgba}, 0.3)`;
 		} else {
 			document.documentElement.style.backgroundColor = 'white';
-			document.body.style.backgroundColor = rgba(${rgba}, 0.4)`;;
+			document.body.style.backgroundColor = `rgba(${rgba}, 0.4)`;
 		}
 	}
 }
