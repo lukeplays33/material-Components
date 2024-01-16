@@ -96,9 +96,8 @@ function addBody (element) {
 	body.innerHTML = element.innerHTML;
 	element.innerHTML = '';
 
-	form.appendChild(body);
-
 	addTitle_Message(form, element);
+	form.appendChild(body);
 	addButtons(form, element);
 
 	element.appendChild(form);
