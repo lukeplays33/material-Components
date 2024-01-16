@@ -16,7 +16,7 @@ function onChange (key) {
 			document.body.style.backgroundColor = 'color-mix( in srgb, var(--md-sys-color-primary-container) 30%, transparent);';
 		} else {
 			document.documentElement.style.backgroundColor = 'white';
-			document.body.style.backgroundColor = 'color-mix( in srgb, var(--md-sys-color-tertiary-container) 40%, transparent);';
+			document.body.style.backgroundColor = 'red' //'color-mix( in srgb, var(--md-sys-color-tertiary-container) 40%, transparent);';
 			alert(document.body.style.backgroundColor)
 		}
 	}
