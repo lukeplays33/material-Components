@@ -29,6 +29,10 @@ function addBackdrop (element) {
 		backdrop.onclick = function () {
 			closePopup(element);
 		}
+
+		element.onclick = function (e) {
+			e.stopPropagation();
+		}
 	}
 
 	document.body.appendChild(backdrop);
