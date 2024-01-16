@@ -46,7 +46,7 @@
 }
 
 .cancelButton {
-	background-color:color-mix( in srgb, var(--md-sys-color-tertiary) 50%, transparent);
+	background-color:color-mix( in srgb, var(--md-sys-color-tertiary) 100%, transparent);
 	color:var(--md-sys-color-on-tertiary);
 	border-radius:50px;
 	width:100%;
