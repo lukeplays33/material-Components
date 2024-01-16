@@ -10,20 +10,19 @@ function initSettings(json) {
 			customWindow[i] = json[i];
 			onChange(i);
 		}
-	}, 1500);
+	}, 1000);
 }
 
 function onChange(key) {
-	alert(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'));
-	let rgba = hexToRgbA('#008dcd');
+	let rgba = hexToRgbA(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'));
 	if (key == 'darkTheme') {
 		alert(rgba);
 		if (customWindow[key]) {
 			document.documentElement.style.backgroundColor = 'black';
-			document.body.style.backgroundColor = 'color-mix( in srgb, var(--md-sys-color-primary-container) 30%, transparent);';
+			document.body.style.backgroundColor = `rgba(${rgba}, 0.3)`;
 		} else {
 			document.documentElement.style.backgroundColor = 'white';
-			document.body.style.backgroundColor = 'color-mix( in srgb, var(--md-sys-color-tertiary-container) 40%, transparent);';
+			document.body.style.backgroundColor = rgba(${rgba}, 0.4)`;;
 		}
 	}
 }
