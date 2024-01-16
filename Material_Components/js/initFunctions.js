@@ -5,14 +5,15 @@ let i;
 let r = document.querySelector(':root');
 
 function initSettings (json) {
+	window.onload = function () {
 	for(i of Object.keys(json)) {
 		customWindow[i] = json[i];
 		onChange(i);
 	}
 }
+}
 
 function onChange (key) {
-	alert(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'))
 	let rgba = hexToRgbA('#008dcd');
 	if(key == 'darkTheme') {
 		alert(rgba);
