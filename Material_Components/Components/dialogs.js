@@ -94,6 +94,7 @@ function addBody (element) {
 
 	let body = document.createElement('div');
 	body.innerHTML = element.innerHTML;
+	element.innerHTL = '';
 
 	form.appendChild(body);
 
