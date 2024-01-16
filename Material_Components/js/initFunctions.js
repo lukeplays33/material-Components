@@ -1,6 +1,8 @@
 import { customWindow } from './windowAlternative.js';
+import { hexToRgbA } from '../utils/hexToRgba.js';
 
 let i;
+let r = document.querySelector(':root');
 
 function initSettings (json) {
 	for(i of Object.keys(json)) {
@@ -11,6 +13,7 @@ function initSettings (json) {
 
 function onChange (key) {
 	if(key == 'darkTheme') {
+		alert(hexToRgbA(getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container')));
 		if(customWindow[key]) {
 			document.documentElement.style.backgroundColor = 'black';
 			document.body.style.backgroundColor = 'color-mix( in srgb, var(--md-sys-color-primary-container) 30%, transparent);';
