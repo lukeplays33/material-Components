@@ -1,4 +1,5 @@
 import { customWindow } from './windowAlternative.js';
+import { hexToRgbA } from '../utils/hexToRgba.js';
 
 let i;
 let r = document.querySelector(':root');
