@@ -1,5 +1,4 @@
 import { customWindow } from './windowAlternative.js';
-import { hexToRgbA } from '../utils/hexToRgba.js';
 
 let i;
 let r = document.querySelector(':root');
@@ -12,9 +11,9 @@ function initSettings (json) {
 }
 
 function onChange (key) {
+	let rgba = window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container').replaceAll('rgb(','').replaceAll(')')
 	if(key == 'darkTheme') {
-		alert()
-		alert(hexToRgbA(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container')));
+		alert(rgba);
 		if(customWindow[key]) {
 			document.documentElement.style.backgroundColor = 'black';
 			document.body.style.backgroundColor = 'color-mix( in srgb, var(--md-sys-color-primary-container) 30%, transparent);';
