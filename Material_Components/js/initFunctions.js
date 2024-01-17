@@ -10,7 +10,7 @@ function initSettings(json) {
 			customWindow[i] = json[i];
 			onChange(i);
 		}
-	}, 500);
+	}, 800);
 }
 
 function onChange(key) {
