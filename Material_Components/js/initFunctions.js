@@ -21,7 +21,7 @@ function onChange(key) {
 			document.documentElement.style.backgroundColor = 'black';
 			document.body.style.backgroundColor = `rgba(${rgba}, 0.3)`;
 		} else {
-			let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-tertiary-container'));
+			let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-tertiary'));
 
 			document.documentElement.style.backgroundColor = 'white';
 			document.body.style.backgroundColor = `rgba(${rgba}, 0.1)`;
