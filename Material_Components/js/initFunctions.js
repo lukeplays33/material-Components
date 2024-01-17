@@ -14,15 +14,18 @@ function initSettings(json) {
 }
 
 function onChange(key) {
-	let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'));
 	if (key == 'darkTheme') {
 		alert(rgba);
 		if (customWindow[key]) {
+			let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'));
+
 			document.documentElement.style.backgroundColor = 'black';
 			document.body.style.backgroundColor = `rgba(${rgba}, 0.3)`;
 		} else {
+			let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-tertiary-container'));
+
 			document.documentElement.style.backgroundColor = 'white';
-			document.body.style.backgroundColor = `rgba(${rgba}, 0.2)`;
+			document.body.style.backgroundColor = `rgba(${rgba}, 0.4)`;
 		}
 	}
 }
