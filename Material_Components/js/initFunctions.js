@@ -24,7 +24,7 @@ function onChange(key) {
 			let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-tertiary'));
 
 			document.documentElement.style.backgroundColor = 'white';
-			document.body.style.backgroundColor = `rgba(${rgba}, 0.1)`;
+			document.body.style.backgroundColor = `rgba(${rgba}, 0.2)`;
 		}
 	}
 }
