@@ -10,7 +10,7 @@ function initSettings(json) {
 			customWindow[i] = json[i];
 			onChange(i);
 		}
-	}, 1000);
+	}, 500);
 }
 
 function onChange(key) {
@@ -22,7 +22,7 @@ function onChange(key) {
 			document.body.style.backgroundColor = `rgba(${rgba}, 0.3)`;
 		} else {
 			document.documentElement.style.backgroundColor = 'white';
-			document.body.style.backgroundColor = `rgba(${rgba}, 0.4)`;
+			document.body.style.backgroundColor = `rgba(${rgba}, 0.2)`;
 		}
 	}
 }
