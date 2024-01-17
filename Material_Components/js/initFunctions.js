@@ -15,7 +15,6 @@ function initSettings(json) {
 
 function onChange(key) {
 	if (key == 'darkTheme') {
-		alert(rgba);
 		if (customWindow[key]) {
 			let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'));
 
