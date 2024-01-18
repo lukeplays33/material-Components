@@ -10,7 +10,7 @@ function initSettings(json) {
 		for (i = 0; i < settings.length; i++) {
 			let item = json[settings[i]]
 			customWindow[item] = json[item];
-			onChange(itemi);
+			onChange(item);
 		}
 	}, 800);
 }
