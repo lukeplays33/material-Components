@@ -8,6 +8,7 @@ function initSettings(json) {
 	window.setTimeout(function () { // find beter alternative for this
 		for (i of Object.keys(json)) {
 			customWindow[i] = json[i];
+			alert(json[i])
 			onChange(i);
 		}
 	}, 800);
