@@ -1,13 +1,13 @@
 import { customWindow } from './windowAlternative.js';
 import { hexToRgb } from '../utils/hexToRgba.js';
 
-let i;
+let i = 0;
 let r = document.querySelector(':root');
 
 function initSettings(json) {
 	window.setTimeout(function () { // find beter alternative for this
 		let settings = Object.keys(json);
-		alert(settings);
+		alert(settings.length)
 		for (i of settings) {
 			alert(i)
 			customWindow[i] = json[i];
