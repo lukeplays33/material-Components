@@ -1,7 +1,7 @@
 import { customWindow } from './windowAlternative.js';
 import { hexToRgb } from '../utils/hexToRgba.js';
 
-import { generateColors } from './js/materialColorGen.js';
+import { generateColors } from '../js/materialColorGen.js';
 
 let i = 0;
 let r = document.querySelector(':root');
@@ -9,8 +9,8 @@ let r = document.querySelector(':root');
 function initSettings(json) {
 	if (!$('meta[name="theme-color"]').length) {
 		$('head').append('<meta name="theme-color" content="#your_color_here">');
-	  }
-	  
+	}
+
 	window.setTimeout(function () { // find beter alternative for this
 		let settings = Object.keys(json);
 		for (i = 0; i < settings.length; i++) {
