@@ -6,7 +6,6 @@ let r = document.querySelector(':root');
 
 function initSettings(json) {
 	window.setTimeout(function () { // find beter alternative for this
-		alert( Object.values(json));
 		for (i of Object.keys(json)) {
 			customWindow[i] = json[i];
 			onChange(i);
@@ -15,6 +14,7 @@ function initSettings(json) {
 }
 
 function onChange(key) {
+	alert(key)
 	if (key == 'darkTheme') {
 		if (customWindow[key]) {
 			let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'));
