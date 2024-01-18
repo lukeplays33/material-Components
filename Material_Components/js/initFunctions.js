@@ -6,7 +6,9 @@ let r = document.querySelector(':root');
 
 function initSettings(json) {
 	window.setTimeout(function () { // find beter alternative for this
-		for (i of Object.keys(json)) {
+		let settings = Object.keys(json);
+		alert(settings);
+		for (i of settings) {
 			alert(i)
 			customWindow[i] = json[i];
 			onChange(i);
