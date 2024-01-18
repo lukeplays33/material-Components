@@ -7,9 +7,13 @@ let i = 0;
 let r = document.querySelector(':root');
 
 function initSettings(json) {
-	if (!$('meta[name="theme-color"]').length) {
-		$('head').append('<meta name="theme-color" content="#008dcd">');
+	if (document.querySelectorAll('meta[name="theme-color"]').length > 0) {
+		var meta = document.createElement('meta');
+		meta.name = "theme-color";
+		meta.content = "#4285f4";
+		document.getElementsByTagName('head')[0].appendChild(meta);
 	}
+
 
 	window.setTimeout(function () { // find beter alternative for this
 		let settings = Object.keys(json);
