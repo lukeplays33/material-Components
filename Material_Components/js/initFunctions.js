@@ -8,7 +8,7 @@ let r = document.querySelector(':root');
 
 function initSettings(json) {
 	if (!$('meta[name="theme-color"]').length) {
-		$('head').append('<meta name="theme-color" content="#your_color_here">');
+		$('head').append('<meta name="theme-color" content="#008dcd">');
 	}
 
 	window.setTimeout(function () { // find beter alternative for this
