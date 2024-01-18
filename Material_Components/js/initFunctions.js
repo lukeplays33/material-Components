@@ -7,11 +7,10 @@ let r = document.querySelector(':root');
 function initSettings(json) {
 	window.setTimeout(function () { // find beter alternative for this
 		let settings = Object.keys(json);
-		alert(settings.length)
-		for (i of settings) {
-			alert(i)
-			customWindow[i] = json[i];
-			onChange(i);
+		for (i = 0; i < settings.length; i++) {
+			let item = json[settings[i]]
+			customWindow[item] = json[item];
+			onChange(itemi);
 		}
 	}, 800);
 }
