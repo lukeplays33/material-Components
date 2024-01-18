@@ -19,12 +19,12 @@ function onChange(key) {
 			let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'));
 
 			document.documentElement.style.backgroundColor = 'black';
-			document.body.style.backgroundColor = `rgba(${rgba}, 0.2)`;
+			document.body.style.backgroundColor = `rgba(${rgba}, 0.3)`;
 		} else {
 			let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary'));
 
 			document.documentElement.style.backgroundColor = 'white';
-			document.body.style.backgroundColor = `rgba(${rgba}, 0.2)`;
+			document.body.style.backgroundColor = `rgba(${rgba}, 0.3)`;
 		}
 	}
 }
