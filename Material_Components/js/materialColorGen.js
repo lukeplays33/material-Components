@@ -5,7 +5,6 @@ import { Hct, argbFromHex, themeFromSourceColor, applyTheme  } from "https://cdn
 let theme = ''
 
 function generateColors () {
-window.setInterval(function () {
     let metaThemeColor = customWindow['themeColour'];
 
 // Get the theme from a hex color
@@ -27,7 +26,6 @@ applyTheme(theme, {target: document.querySelector(':root'), dark: systemDark});
 		metaThemeColor.setAttribute("content",getComputedStyle(document.querySelector(':root')).getPropertyValue('--md-sys-color-primary'));
 
 	document.querySelector(':root').style.setProperty('--md-sys-color-source',customWindow['themeColour']);
-	},1);
 }
 
 export { generateColors }

@@ -1,6 +1,8 @@
 import { customWindow } from './windowAlternative.js';
 import { hexToRgb } from '../utils/hexToRgba.js';
 
+import { generateColors } from './js/materialColorGen.js';
+
 let i = 0;
 let r = document.querySelector(':root');
 
@@ -9,7 +11,7 @@ function initSettings(json) {
 		let settings = Object.keys(json);
 		for (i = 0; i < settings.length; i++) {
 			let item = json[settings[i]];
-			alert(item);
+
 			customWindow[item] = json[item];
 			onChange(item);
 		}
@@ -17,6 +19,8 @@ function initSettings(json) {
 }
 
 function onChange(key) {
+	generateColors();
+
 	if (key == 'darkTheme') {
 		if (customWindow[key]) {
 			let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'));
@@ -31,6 +35,11 @@ function onChange(key) {
 		}
 	}
 }
+
+window.matchMedia('(prefers-color-scheme: dark)')
+	.addEventListener('change', ({ matches }) => {
+		generateColors();
+	})
 
 window.onload = function () {
 	for (i of document.getElementsByClassName('navigator')) {
