@@ -6,9 +6,9 @@ let r = document.querySelector(':root');
 
 function initSettings(json) {
 	window.setTimeout(function () { // find beter alternative for this
+		alert(Object.keys(json))
 		for (i of Object.keys(json)) {
 			customWindow[i] = json[i];
-			alert(i)
 			onChange(i);
 		}
 	}, 800);
