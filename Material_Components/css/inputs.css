@@ -99,7 +99,12 @@ input[type='file'] {
 
 	border-radius: 300px;
 
-	background-color:var(--md-sys-color-primary)
+	background-color:var(--md-sys-color-primary);
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+
+	color:TRANSPARENT;
 }
 
 ::file-selector-button {
