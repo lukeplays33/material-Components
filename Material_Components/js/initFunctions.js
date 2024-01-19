@@ -28,6 +28,7 @@ function initSettings(json) {
 }
 
 function onChange(key) {
+	alert(key)
 	if (key == 'darkTheme') {
 		alert()
 		if (customWindow[key]) {
