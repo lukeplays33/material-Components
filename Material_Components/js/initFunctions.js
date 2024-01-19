@@ -22,12 +22,12 @@ function initSettings(json) {
 
 			customWindow[item] = json[item];
 			onChange(item);
-			alert()
 		}
 	}, 800);
 }
 
 function onChange(key) {
+	alert()
 	generateColors();
 
 	if (key == 'darkTheme') {
