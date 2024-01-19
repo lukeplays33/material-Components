@@ -20,6 +20,8 @@ function initSettings(json) {
 		let settings = Object.keys(json);
 		for (i = 0; i < settings.length; i++) {
 			let item = settings[i];
+			alert(item);
+			alert(json[item]);
 
 			customWindow[item] = json[item];
 			onChange(item);
