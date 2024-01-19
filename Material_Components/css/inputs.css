@@ -98,4 +98,10 @@ input[type='file'] {
 	height:50px;
 
 	border-radius: 300px;
+
+	background-color:var(--md-sys-color-primary)
 }
+
+::file-selector-button {
+	display: none;
+  } /* hides the "choose file thingy"
