@@ -92,3 +92,8 @@ input[type='submit'], input[type='button'] {
 	height:max-content;
 	width:min-content;
 }
+
+form {
+	display:flex;
+	flex-direction:row;
+}
