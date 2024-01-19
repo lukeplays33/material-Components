@@ -19,10 +19,9 @@ function initSettings(json) {
 	window.setTimeout(function () { // find beter alternative for this
 		let settings = Object.keys(json);
 		for (i = 0; i < settings.length; i++) {
-			let item = json[settings[i]];
+			let item = settings[i];
 
 			customWindow[item] = json[item];
-			alert(item)
 			onChange(item);
 		}
 	}, 800);
