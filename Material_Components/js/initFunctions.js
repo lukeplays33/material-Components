@@ -22,15 +22,14 @@ function initSettings(json) {
 			let item = json[settings[i]];
 
 			customWindow[item] = json[item];
+			alert(item)
 			onChange(item);
 		}
 	}, 800);
 }
 
 function onChange(key) {
-	alert(key)
 	if (key == 'darkTheme') {
-		alert()
 		if (customWindow[key]) {
 			let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'));
 
