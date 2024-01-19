@@ -24,7 +24,7 @@ function initSettings(json) {
 		}
 
 		generateColors();
-		alert(customWindow['themeColur'])
+		alert(customWindow['themeColour'])
 	}, 800);
 }
 
