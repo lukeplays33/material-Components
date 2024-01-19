@@ -40,8 +40,6 @@ function onSettingsChange(key) {
 			document.documentElement.style.backgroundColor = 'white';
 			document.body.style.backgroundColor = `rgba(${rgba}, 0.30)`;
 		}
-
-		document.querySelector(':root').style.setProperty('--md-sys-color-background', document.body.style.backgroundColor); //change the background color to the custom generated color
 	}
 }
 
