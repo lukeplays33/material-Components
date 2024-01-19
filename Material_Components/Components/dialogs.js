@@ -98,6 +98,7 @@ function addBody (element) {
 
 	let body = document.createElement('div');
 	body.innerHTML = element.innerHTML;
+	body.className = 'dialogBody';
 	element.innerHTML = '';
 
 	addTitle_Message(form, element);

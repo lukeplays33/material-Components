@@ -69,3 +69,8 @@
   .dialogTitle {
 	font-size:25px;
   }
+
+  .dialogBody {
+	display:flex;
+	flex-direction:row;
+  }
