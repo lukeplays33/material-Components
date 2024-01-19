@@ -31,6 +31,7 @@ function onChange(key) {
 
 	if (key == 'darkTheme') {
 		if (customWindow[key]) {
+			alert()
 			let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'));
 
 			document.documentElement.style.backgroundColor = 'black';
