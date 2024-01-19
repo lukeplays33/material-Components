@@ -14,6 +14,7 @@ function initSettings(json) {
 		document.getElementsByTagName('head')[0].appendChild(meta);
 	}
 
+	generateColors();
 
 	window.setTimeout(function () { // find beter alternative for this
 		let settings = Object.keys(json);
@@ -28,7 +29,6 @@ function initSettings(json) {
 
 function onChange(key) {
 	alert()
-	generateColors();
 
 	if (key == 'darkTheme') {
 		if (customWindow[key]) {
