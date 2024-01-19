@@ -14,18 +14,17 @@ function initSettings(json) {
 		document.getElementsByTagName('head')[0].appendChild(meta);
 	}
 
-	generateColors();
-
 	window.setTimeout(function () { // find beter alternative for this
 		let settings = Object.keys(json);
 		for (i = 0; i < settings.length; i++) {
 			let item = settings[i];
-			alert(item);
-			alert(json[item]);
 
 			customWindow[item] = json[item];
 			onChange(item);
 		}
+
+		generateColors();
+		alert(customWindow['themeColur'])
 	}, 800);
 }
 
