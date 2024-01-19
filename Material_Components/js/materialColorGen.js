@@ -23,7 +23,7 @@ function generateColors() {
 
   // Apply the theme to the body by updating custom properties for material tokens
   applyTheme(theme, { target: document.querySelector(':root'), dark: systemDark });
-  onSettingsChange('themeColour'); // makes sure the theme colour changes properly 
+  onSettingsChange('darkTheme'); // makes sure the theme colour changes properly after new colours have been created
 
   metaThemeColor = document.querySelector('meta[name="theme-color"]');
   metaThemeColor.setAttribute("content", getComputedStyle(document.querySelector(':root')).getPropertyValue('--md-sys-color-primary'));
