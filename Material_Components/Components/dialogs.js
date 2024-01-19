@@ -95,7 +95,6 @@ function addCancelButton (element) {
 function addBody (element) {
 	let form = document.createElement('form');
 	form.style.width = '100%';
-	form.style.minHeight = '50%';
 
 	let body = document.createElement('div');
 	body.innerHTML = element.innerHTML;
