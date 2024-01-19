@@ -85,7 +85,9 @@ function addCancelButton (element) {
 		cancelButton.className = 'cancelButton';
 		cancelButton.innerHTML = element.getAttribute('cancelText');
 
-		cancelButton.onclick = function () {
+		cancelButton.onclick = function (e) {
+			e.preventDefault();
+			
 				closePopup(element);
 			}
 
