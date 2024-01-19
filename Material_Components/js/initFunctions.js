@@ -20,15 +20,14 @@ function initSettings(json) {
 			let item = settings[i];
 
 			customWindow[item] = json[item];
-			onChange(item);
+			onSettingsChange(item);
 		}
 
 		generateColors();
-		alert(customWindow['themeColour'])
 	}, 800);
 }
 
-function onChange(key) {
+function onSettingsChange(key) {
 	if (key == 'darkTheme') {
 		if (customWindow[key]) {
 			let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'));
@@ -55,4 +54,4 @@ window.onload = function () {
 	}
 }
 
-export { initSettings }
+export { initSettings, onSettingsChange }
