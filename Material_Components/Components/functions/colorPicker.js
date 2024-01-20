@@ -1,5 +1,7 @@
 import { hexAToRGBA } from './utils.js';
 
+import { PopUp } from '../dialogs.js';
+
 function openColorPicker (startColor) {
 	if(startColor == null) {
 	startColor = [Math.floor(Math.random() * 255) +1, Math.floor(Math.random() * 255) +1, Math.floor(Math.random() * 255) +1,1.0];

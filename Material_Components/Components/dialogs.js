@@ -66,11 +66,11 @@ function addButtons (form, element) {
 	form.appendChild(buttonHolder);
 }
 
-function addAcceptButton (form, element) {
+function addAcceptButton (form, element) { // creates the submit button
 	let acceptButton = document.createElement('input');
 	acceptButton.className = 'acceptButton';
 	acceptButton.type = 'submit';
-	acceptButton.innerHTML = element.getAttribute('acceptText');
+	acceptButton.innerHTML = element.getAttribute('submitText');
 
 	acceptButton.onclick = function (e) {
 		e.preventDefault();
