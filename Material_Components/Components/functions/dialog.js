@@ -1,7 +1,7 @@
 function closePopup(popup, form = null) {
 	popup.parentNode.style.display = 'none';
 
-	if(from == null) {
+	if(form == null) {
 		try {
 			popup.popupcCancelled();
 		} catch (e) { }
