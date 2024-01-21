@@ -1,4 +1,4 @@
-import {closePopup} from './functions/dialog.js';
+import { closePopup } from './functions/dialog.js';
 // Create a class for the element
 class PopUp extends HTMLElement {
 	constructor() {
@@ -18,14 +18,14 @@ class PopUp extends HTMLElement {
 // Define the new element
 customElements.define('pop-up', PopUp);
 
-			export {PopUp}
+export { PopUp }
 
-function addBackdrop (element) {
+function addBackdrop(element) {
 	let backdrop = document.createElement('div');
 	backdrop.className = 'dialog-backdrop';
 	backdrop.appendChild(element);
 
-	if(element.getAttribute('backdropClose') == 'true') {
+	if (element.getAttribute('backdropClose') == 'true') {
 		backdrop.onclick = function () {
 			closePopup(element);
 		}
@@ -38,7 +38,7 @@ function addBackdrop (element) {
 	document.body.appendChild(backdrop);
 }
 
-function addTitle_Message (form, element) {
+function addTitle_Message(form, element) {
 	let holder = document.createElement('div');
 	holder.className = 'dialogInfoHolder';
 
@@ -56,7 +56,7 @@ function addTitle_Message (form, element) {
 	form.appendChild(holder);
 }
 
-function addButtons (form, element) {
+function addButtons(form, element) {
 	let buttonHolder = document.createElement('div');
 	buttonHolder.className = 'dialogButtonHolder';
 
@@ -66,38 +66,42 @@ function addButtons (form, element) {
 	form.appendChild(buttonHolder);
 }
 
-function addAcceptButton (form, element) { // creates the submit button
+function addAcceptButton(form, element) { // creates the submit button
 	let acceptButton = document.createElement('input');
 	acceptButton.className = 'acceptButton';
 	acceptButton.type = 'submit';
 	acceptButton.innerHTML = element.getAttribute('submitText');
 
 	acceptButton.onclick = function (e) {
-		alert(element.action);
-		e.preventDefault();
+		if (!element.action) {
+			e.preventDefault();
+		}
 		closePopup(element, new FormData(form));
 	}
 
 	return acceptButton;
 }
 
-function addCancelButton (element) {
+function addCancelButton(element) {
 	let cancelButton = document.createElement('button');
-		cancelButton.className = 'cancelButton';
-		cancelButton.innerHTML = element.getAttribute('cancelText');
+	cancelButton.className = 'cancelButton';
+	cancelButton.innerHTML = element.getAttribute('cancelText');
 
-		cancelButton.onclick = function (e) {
-			e.preventDefault();
-			
-				closePopup(element);
-			}
+	cancelButton.onclick = function (e) {
+		e.preventDefault();
+
+		closePopup(element);
+	}
 
 	return cancelButton;
 }
 
-function addBody (element) {
+function addBody(element) {
 	let form = document.createElement('form');
 	form.style.width = '100%';
+	if (!element.action) {
+		form.action = element.action;
+	}
 
 	let body = document.createElement('div');
 	body.innerHTML = element.innerHTML;
