@@ -74,6 +74,7 @@ function addAcceptButton(form, element) { // creates the submit button
 
 	acceptButton.onclick = function (e) {
 		if (element.hasAttribute('action')) {
+			alert()
 			e.preventDefault();
 		}
 		closePopup(element, new FormData(form));
@@ -100,7 +101,6 @@ function addBody(element) {
 	let form = document.createElement('form');
 	form.style.width = '100%';
 	if (element.hasAttribute('action')) {
-		alert()
 		form.action = element.action;
 		form.method = 'POST';
 	}
