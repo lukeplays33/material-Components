@@ -71,6 +71,7 @@ function addAcceptButton(form, element) { // creates the submit button
 	acceptButton.className = 'acceptButton';
 	acceptButton.type = 'submit';
 	acceptButton.innerHTML = element.getAttribute('submitText');
+	acceptButton.name = element.getAttribute('submitText');
 
 	acceptButton.onclick = function (e) {
 		if (!element.hasAttribute('action')) {
