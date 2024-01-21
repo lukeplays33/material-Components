@@ -73,6 +73,7 @@ function addAcceptButton (form, element) { // creates the submit button
 	acceptButton.innerHTML = element.getAttribute('submitText');
 
 	acceptButton.onclick = function (e) {
+		alert(element.action);
 		e.preventDefault();
 		closePopup(element, new FormData(form));
 	}
