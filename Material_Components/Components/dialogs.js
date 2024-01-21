@@ -100,6 +100,7 @@ function addBody(element) {
 	let form = document.createElement('form');
 	form.style.width = '100%';
 	if (element.action) {
+		alert()
 		form.action = element.action;
 		form.method = 'POST';
 	}
