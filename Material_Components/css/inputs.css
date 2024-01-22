@@ -111,14 +111,6 @@ input[type='file'] {
 	display: none;
   } /* hides the "choose file thingy" */
 
-  input[type='radio']:checked, input[type='checkbox']:checked {
-        border-radius: 15px;
-        top: -2px;
-        left: -1px;
-        position: relative;
-        background-color: var(--md-sys-color-tertiary);
-        content: '';
-        display: inline-block;
-        visibility: visible;
-        border: 0px;
+  input[type='radio'], input[type='checkbox'] {
+	accent-color:var(--md-sys-color-tertiary);
     }
