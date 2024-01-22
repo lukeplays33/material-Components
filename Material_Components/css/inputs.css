@@ -130,7 +130,7 @@ input[type='file'] {
 
 input[type='radio']:checked,
 input[type='checkbox']:checked {
-	background-color: var(--md-sys-color-tertiary);
+	background-color: var(--md-sys-color-tertiary) !important;
 
 	-webkit-appearance: none;
 -moz-appearance: none;
@@ -141,7 +141,7 @@ appearance: none;
 
 input[type='radio'],
 input[type='checkbox'] {
-	background-color:var(--md-sys-color-on-background);
+	background-color:var(--md-sys-color-on-background) !important;
 
 	-webkit-appearance: none;
 -moz-appearance: none;
