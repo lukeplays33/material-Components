@@ -1,117 +1,166 @@
-
 /* range */
 input[type='range'] {
-	-webkit-appearance: none;  /* Override default CSS styles */
+	-webkit-appearance: none;
+	/* Override default CSS styles */
 	appearance: none;
-	width: 100%; /* Full-width */
-	height: 35px; /* Specified height */
-	outline: none; /* Remove outline */
-	opacity: 0.85; /* Set transparency (for mouse-over effects on hover) */
-	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+	width: 100%;
+	/* Full-width */
+	height: 35px;
+	/* Specified height */
+	outline: none;
+	/* Remove outline */
+	opacity: 0.85;
+	/* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: .2s;
+	/* 0.2 seconds transition on hover */
 	transition: opacity .2s;
 
-	border-radius:300px;
+	border-radius: 300px;
 
-	overflow:hidden;
+	overflow: hidden;
 
-	background-color:var(--md-sys-color-surface-variant);;
+	background-color: var(--md-sys-color-surface-variant);
+	;
 
-	padding:0px;
+	padding: 0px;
 
 }
 
 /* Mouse-over effects */
 input[type='range']:hover {
-	opacity: 1; /* Fully shown on mouse-over */
+	opacity: 1;
+	/* Fully shown on mouse-over */
 
-	padding:0px;
+	padding: 0px;
 }
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 input[type='range']::-webkit-slider-thumb {
-	-webkit-appearance: none; /* Override default look */
+	-webkit-appearance: none;
+	/* Override default look */
 	appearance: none;
-	width: 35px; /* Set a specific slider handle width */
-	height: 35px; /* Slider handle height */
-	background: var(--md-sys-color-primary); /* Green background */
-	cursor: pointer; /* Cursor on hover */
+	width: 35px;
+	/* Set a specific slider handle width */
+	height: 35px;
+	/* Slider handle height */
+	background: var(--md-sys-color-primary);
+	/* Green background */
+	cursor: pointer;
+	/* Cursor on hover */
 
-	border-top-right-radius:300px;
-	border-bottom-right-radius:300px;
+	border-top-right-radius: 300px;
+	border-bottom-right-radius: 300px;
 
 
-	border-image-source: linear-gradient(90deg,var(--md-sys-color-primary) 50%,TRANSPARENT 0); 
-border-image-slice: 1;
-border-image-width: 0 100vw;
-border-image-outset: 0 100vw;
+	border-image-source: linear-gradient(90deg, var(--md-sys-color-primary) 50%, TRANSPARENT 0);
+	border-image-slice: 1;
+	border-image-width: 0 100vw;
+	border-image-outset: 0 100vw;
 
-	padding:0px;
+	padding: 0px;
 }
 
 /*color*/
 
-input[type="color"], .colorpicker {
+input[type="color"],
+.colorpicker {
 	-webkit-appearance: none;
 	border: solid;
-	border-width:3px;
-	border-color:var(--md-sys-color-primary);
+	border-width: 3px;
+	border-color: var(--md-sys-color-primary);
 	width: 32px;
 	height: 32px;
-	border-radius:50px;
-	background-color:TRANSPARENT;
-	padding:0px;
+	border-radius: 50px;
+	background-color: TRANSPARENT;
+	padding: 0px;
 }
 
 input[type="color"]::-webkit-color-swatch-wrapper {
 	padding: 0;
-		border-radius:50px;
+	border-radius: 50px;
 }
 
 input[type="color"]::-webkit-color-swatch {
 	border: none;
-		border-radius:50px;
+	border-radius: 50px;
 }
 
-input, textarea {
-	border-radius:17px;
-	border-width:0px;
-	background-color:var(--md-sys-color-background);
-	color:var(--md-sys-color-on-surface-variant);
+input,
+textarea {
+	border-radius: 17px;
+	border-width: 0px;
+	background-color: var(--md-sys-color-background);
+	color: var(--md-sys-color-on-surface-variant);
 
-	padding:8px;
+	padding: 8px;
 }
 
-input[type='submit'], input[type='button'] {
-	background-color:var(--md-sys-color-primary);
-	color:var(--md-sys-color-on-primary);
-	border-radius:50px;
-	border-width:0px;
-	padding:14px;
-	font-size:16px;
+input[type='submit'],
+input[type='button'] {
+	background-color: var(--md-sys-color-primary);
+	color: var(--md-sys-color-on-primary);
+	border-radius: 50px;
+	border-width: 0px;
+	padding: 14px;
+	font-size: 16px;
 
-	height:max-content;
-	width:min-content;
+	height: max-content;
+	width: min-content;
 }
 
 input[type='file'] {
-	width:50px;
-	height:50px;
+	width: 50px;
+	height: 50px;
 
 	border-radius: 300px;
 
-	background-color:var(--md-sys-color-primary);
-	background-position:center;
-	background-size:cover;
-	background-repeat:no-repeat;
+	background-color: var(--md-sys-color-primary);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 
-	color:TRANSPARENT;
+	color: TRANSPARENT;
 }
 
 ::file-selector-button {
 	display: none;
-  } /* hides the "choose file thingy" */
+}
 
-  input[type='radio'], input[type='checkbox'] {
-	accent-color:var(--md-sys-color-tertiary);
-	background-color:var(--md-sys-color-tertiary);
-    }
+/* hides the "choose file thingy" */
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"]+label {
+	color: var(--md-sys-color-tertiary);
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+
+input[type="radio"]+label span {
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	margin: -1px 4px 0 0;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+input[type="radio"]+label span {
+	background-color: var(--md-sys-color-tertiary);
+}
+
+input[type="radio"]:checked+label span {
+	background-color: var(--md-sys-color-tertiary);
+}
+
+input[type="radio"]+label span,
+input[type="radio"]:checked+label span {
+	-webkit-transition: background-color 0.4s linear;
+	-o-transition: background-color 0.4s linear;
+	-moz-transition: background-color 0.4s linear;
+	transition: background-color 0.4s linear;
+}
