@@ -111,7 +111,7 @@ input[type='file'] {
 	display: none;
   } /* hides the "choose file thingy" */
 
-  input[type='radio']:checked:after, input[type='checkbox']:checked:after {
+  input[type='radio']:checked, input[type='checkbox']:checked {
         width: 15px;
         height: 15px;
         border-radius: 15px;

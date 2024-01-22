@@ -103,6 +103,7 @@ function addBody(element) {
 	if (element.hasAttribute('action')) {
 		form.action = element.getAttribute('action');
 		form.method = 'POST';
+		form.enctype = 'multipart/form-data';
 	}
 
 	let body = document.createElement('div');
