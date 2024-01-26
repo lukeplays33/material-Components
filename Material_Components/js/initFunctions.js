@@ -8,6 +8,7 @@ let r = document.querySelector(':root');
 
 function initSettings(json) {
 	if (document.querySelectorAll('meta[name="theme-color"]').length > 0) {
+		alert()
 		var meta = document.createElement('meta');
 		meta.name = "theme-color";
 		meta.content = "#4285f4";

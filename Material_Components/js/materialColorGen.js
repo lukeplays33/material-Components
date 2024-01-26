@@ -4,7 +4,7 @@ import { Hct, argbFromHex, themeFromSourceColor, applyTheme } from "https://cdn.
 
 import { onSettingsChange } from './initFunctions.js';
 
-let theme = ''
+let theme = '';
 
 function generateColors() {
   let metaThemeColor = customWindow['themeColour'];
