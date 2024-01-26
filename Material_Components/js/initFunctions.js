@@ -33,7 +33,7 @@ function onSettingsChange(key) {
 			mainColour = '#ffffff';
 		}
 
-		r.style.setProperty('--md-sys-color-background', colourBlend(mainColour, priamryColour, 0.2));
+		r.style.setProperty('--md-sys-color-background', colourBlend(mainColour, priamryColour, 0.3));
 	}
 }
 }
