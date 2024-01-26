@@ -31,7 +31,7 @@ function onSettingsChange(key) {
 	if(customWindow['themeStyle'] == 'Sketch') { //check whether the custom colour geneartion should be used
 
 	let priamryColour = window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container');
-	let mainColor;
+	let mainColour;
 
 	if (key == 'darkTheme') {
 		if (customWindow[key]) {
