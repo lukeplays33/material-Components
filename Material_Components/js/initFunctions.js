@@ -1,5 +1,5 @@
 import { customWindow } from './windowAlternative.js';
-import { hexToRgb } from '../utils/hexToRgba.js';
+import { colourBlend } from '../utils/blendColours.js';
 
 import { generateColors } from '../js/materialColorGen.js';
 
@@ -28,17 +28,13 @@ function initSettings(json) {
 }
 
 function onSettingsChange(key) {
+	let mainColour = window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container');
+
 	if (key == 'darkTheme') {
 		if (customWindow[key]) {
-			let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container'));
-
-			document.documentElement.style.backgroundColor = 'black';
-			document.body.style.backgroundColor = `rgba(${rgba}, 0.30)`;
+			document.body.style.backgroundColor = colourBlend('#000000', mainColour, 0.5);
 		} else {
-			let rgba = hexToRgb(window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary'));
-
-			document.documentElement.style.backgroundColor = 'white';
-			document.body.style.backgroundColor = `rgba(${rgba}, 0.30)`;
+			document.body.style.backgroundColor = colourBlend('#ffffff', mainColour, 0.5);
 		}
 	}
 }
