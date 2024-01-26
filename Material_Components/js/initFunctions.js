@@ -28,15 +28,21 @@ function initSettings(json) {
 }
 
 function onSettingsChange(key) {
-	let mainColour = window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container');
+	if(customWindow['themeStyle'] == 'Sketch') { //check whether the custom colour geneartion should be used
+
+	let priamryColour = window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container');
+	let mainColor;
 
 	if (key == 'darkTheme') {
 		if (customWindow[key]) {
-			document.body.style.backgroundColor = colourBlend('#000000', mainColour, 0.5);
+			mainColour = '#000000';
 		} else {
-			document.body.style.backgroundColor = colourBlend('#ffffff', mainColour, 0.5);
+			mainColour = '#ffffff';
 		}
+
+		r.setProperty('--md-sys-color-background', colourBlend(mainColor, priamryColour, 0.4));
 	}
+}
 }
 
 window.matchMedia('(prefers-color-scheme: dark)')
