@@ -19,6 +19,8 @@ html,body {
   margin:0px;
 	overflow-y:auto;
 	overflow-x:hidden;
+
+	background-color:var(--md-sys-color-background);
 }
 
 ::selection {
