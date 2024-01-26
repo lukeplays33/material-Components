@@ -60,7 +60,7 @@ header {
 
   color:var(--md-sys-color-on-primary-container);
 
-  min-height:80px;
+  min-height:17px;
   width:calc(100% - 16px);
 
   margin:8px;
