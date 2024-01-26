@@ -21,7 +21,7 @@ function initSettings(json) {
 }
 
 function onSettingsChange(key) {
-	if(customWindow['themeStyle'] == 'Sketch') { //check whether the custom colour geneartion should be used
+	if(customWindow['colourGeneration'] == 'Sketch') { //check whether the custom colour geneartion should be used
 
 	let priamryColour = window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container');
 	let mainColour;
