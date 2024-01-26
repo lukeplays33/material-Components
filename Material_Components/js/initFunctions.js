@@ -34,13 +34,13 @@ function onSettingsChange(key) {
 	let mainColour;
 
 	if (key == 'darkTheme') {
-		if (customWindow[key]) {
+		if (customWindow[key]) { //checkwheter black or white should be used
 			mainColour = '#000000';
 		} else {
 			mainColour = '#ffffff';
 		}
 
-		r.setProperty('--md-sys-color-background', colourBlend(mainColor, priamryColour, 0.4));
+		r.setProperty('--md-sys-color-background', colourBlend(mainColour, priamryColour, 0.4));
 	}
 }
 }
