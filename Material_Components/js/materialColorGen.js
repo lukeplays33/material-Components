@@ -25,8 +25,11 @@ function generateColors() {
   applyTheme(theme, { target: document.querySelector(':root'), dark: systemDark });
   onSettingsChange('darkTheme'); // makes sure the theme colour changes properly after new colours have been created
 
-  metaThemeColor = document.querySelector('meta[name="theme-color"]');
-  metaThemeColor.setAttribute("content", getComputedStyle(document.querySelector(':root')).getPropertyValue('--md-sys-color-primary'));
+  //change statusBar and theme attr colour
+  var meta = document.createElement('meta');
+  meta.name = "theme-color";
+  meta.content = getComputedStyle(document.querySelector(':root')).getPropertyValue('--md-sys-color-primary');
+  document.getElementsByTagName('head')[0].appendChild(meta);
 
   document.querySelector(':root').style.setProperty('--md-sys-color-source', customWindow['themeColour']);
 }
