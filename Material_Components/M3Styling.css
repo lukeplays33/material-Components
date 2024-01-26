@@ -56,11 +56,11 @@ button {
 }
 
 header {
-  background-color:var(--md-sys-color-primary);
+  background-color:var(--md-sys-color-primary-container);
 
-  color:var(--md-sys-color-on-primary);
+  color:var(--md-sys-color-on-primary-container);
 
-  min-height:50px;
+  min-height:80px;
   width:calc(100% - 16px);
 
   margin:8px;
