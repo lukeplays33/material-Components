@@ -60,14 +60,14 @@ header {
 
   color:var(--md-sys-color-on-primary-container);
 
-  min-height:17px;
+  min-height:80px;
   width:calc(100% - 16px);
 
   margin:8px;
 
   display:flex;
 
-  border-radius:200px;
+  border-radius:17px;
 }
 
 	.logoText {
