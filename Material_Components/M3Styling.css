@@ -62,7 +62,7 @@ header {
   margin:16px;
 
   display:flex;
-  gap:8px;
+  gap:16px;
 }
 
 header * {
@@ -76,6 +76,10 @@ header * {
 	flex:1;
 
 	padding:16px;
+}
+
+header *:nth-child(1) {
+	flex:2;
 }
 
 	.logoText {
