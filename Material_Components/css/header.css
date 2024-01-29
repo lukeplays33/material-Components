@@ -41,7 +41,7 @@ header *:nth-child(2) {
     height: 16px;
     width: 16px;
 
-    flex:16px !important;
+    flex:1;
 
     margin-right:16px;
 
