@@ -17,7 +17,7 @@ header * {
 
     height: 100%;
     flex: 1;
-    flex-wrap:wrap;
+    flex-grow:0;
 
     padding: 8px;
 }
