@@ -13,7 +13,7 @@ header * {
 
     color: var(--md-sys-color-on-primary-container);
 
-    border-radius: 27px;
+    border-radius: 200px;
 
     height: 100%;
     flex: 1;
