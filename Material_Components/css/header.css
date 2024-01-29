@@ -24,10 +24,6 @@ header * {
     padding: 8px;
 }
 
-header *:nth-child(2) {
-    flex: 3;
-}
-
 .logoText {
     font-family: Sans-serif;
     font-size: 20px;
