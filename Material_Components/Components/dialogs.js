@@ -45,6 +45,7 @@ function addTitle_Message(form, element) {
 	let title = document.createElement('p');
 	title.className = 'dialogTitle';
 	title.innerHTML = element.getAttribute('title');
+	element.removeAttribute('title');
 
 	let message = document.createElement('p');
 	message.className = 'dialogMessage';
