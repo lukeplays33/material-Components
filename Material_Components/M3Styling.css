@@ -59,9 +59,10 @@ header {
   min-height:80px;
   width:calc(100% - 16px);
 
-  margin:8px;
+  margin:16px;
 
   display:flex;
+  gap:8px;
 }
 
 header * {
@@ -73,6 +74,8 @@ header * {
 
 	height:100%;
 	flex:1;
+
+	padding:16px;
 }
 
 	.logoText {
