@@ -5,6 +5,8 @@ function closePopup(popup, form = null) {
 		try {
 			popup.popupcCancelled();
 		} catch (e) { }
+		
+		return;
 	}
 
 	try {
