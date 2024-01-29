@@ -56,18 +56,23 @@ button {
 }
 
 header {
-  background-color:var(--md-sys-color-primary-container);
-
-  color:var(--md-sys-color-on-primary-container);
-
   min-height:80px;
   width:calc(100% - 16px);
 
   margin:8px;
 
   display:flex;
+}
 
-  border-radius:17px;
+header * {
+	background-color:var(--md-sys-color-primary-container);
+
+	color:var(--md-sys-color-on-primary-container);
+
+	border-radius:17px;
+
+	height:100%;
+	flex:1;
 }
 
 	.logoText {
