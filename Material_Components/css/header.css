@@ -22,7 +22,7 @@ header * {
 }
 
 header *:nth-child(2) {
-    flex: 4;
+    flex: 3;
 }
 
 .logoText {
@@ -40,8 +40,6 @@ header *:nth-child(2) {
 .logo {
     height: 16px;
     width: 16px;
-
-    flex:1;
 
     margin-right:16px;
 
