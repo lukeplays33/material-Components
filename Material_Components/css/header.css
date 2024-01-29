@@ -30,7 +30,7 @@ header *:nth-child(2) {
 
 .logoText {
     font-family: Sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--md-sys-color-on-surface-variant);
 
     width: max-content;
@@ -41,10 +41,10 @@ header *:nth-child(2) {
 }
 
 .logo {
-    max-height: 30px;
-    max-width: 30px;
-    min-height: 30px;
-    min-width: 30px;
+    max-height: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    min-width: 20px;
 
     margin-right:8px;
 
