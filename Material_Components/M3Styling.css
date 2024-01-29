@@ -57,7 +57,7 @@ button {
 
 header {
   min-height:80px;
-  width:calc(100% - 16px);
+  width:calc(100% - 32px);
 
   margin:16px;
 
@@ -70,7 +70,7 @@ header * {
 
 	color:var(--md-sys-color-on-primary-container);
 
-	border-radius:17px;
+	border-radius:27px;
 
 	height:100%;
 	flex:1;
