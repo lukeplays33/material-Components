@@ -39,8 +39,8 @@ header *:nth-child(2) {
 }
 
 .logo {
-    height: 30px;
-    max-width: 30px;
+    max-height: 50px;
+    max-width: 50px;
 
     margin-right:16px;
 
