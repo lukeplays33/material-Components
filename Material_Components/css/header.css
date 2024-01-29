@@ -29,13 +29,12 @@ header *:nth-child(2) {
     font-family: Sans-serif;
     font-size: 40px;
     color: var(--md-sys-color-on-surface-variant);
-    margin: 0px;
-    margin-top: auto;
-    margin-bottom: auto;
 
     width: max-content;
 
     display: flex;
+
+    align_items:center;
 }
 
 .logo {
