@@ -10,7 +10,7 @@ function inIframe () {
 
 if(inIframe()) {
 	colour = window.top.document.body;
-	alert(colour);
+	console.log(colour);
 }
 
 let customWindow = {
