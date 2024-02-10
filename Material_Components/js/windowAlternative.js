@@ -9,7 +9,7 @@ function inIframe () {
 }
 
 if(inIframe()) {
-	colour = window.top.getComputedStyle(document.querySelector(':root')).getPropertyValue('--md-sys-color-source');
+	colour = getComputedStyle(window.top.document.querySelector(':root')).getPropertyValue('--md-sys-color-source');
 	console.log(colour);
 }
 
