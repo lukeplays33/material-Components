@@ -18,6 +18,8 @@ function initSettings(json) {
 
 		generateColors();
 	}, 800);
+
+	return customWindow;
 }
 
 function onSettingsChange(key) {
@@ -27,7 +29,7 @@ function onSettingsChange(key) {
 	let mainColour;
 
 	if (key == 'darkTheme') {
-		if (customWindow[key]) { //checkwheter black or white should be used
+		if (customWindow[key]) { //check wheter black or white should be used
 			mainColour = '#000000';
 		} else {
 			mainColour = '#ffffff';

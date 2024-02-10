@@ -1,4 +1,5 @@
 let colour = '#008dcd';
+let themeStyle = 'Sketch';
 
 function inIframe () {
     try {
@@ -10,13 +11,12 @@ function inIframe () {
 
 if(inIframe()) {
 	colour = getComputedStyle(window.top.document.querySelector(':root')).getPropertyValue('--md-sys-color-source');
-	console.log(colour);
 }
 
 let customWindow = {
 	darkTheme: window.matchMedia("(prefers-color-scheme: dark)").matches,
 	themeColour: colour,
-	colourGeneration:'Sketch'
+	colourGeneration:themeStyle
 };
 
 export { customWindow }
