@@ -9,7 +9,7 @@ function inIframe () {
 }
 
 if(inIframe()) {
-	colour = window.top.document.body;
+	colour = window.top.document.body.style;
 	console.log(colour);
 }
 
