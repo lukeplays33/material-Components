@@ -6,7 +6,7 @@ import { generateColors } from '../js/materialColorGen.js';
 let i = 0;
 let r = document.querySelector(':root');
 
-window.self.onload = function () {
+window.onload = function () {
     alert()
     if (inIframe()) {
         customWindow['themeColour'] = getComputedStyle(window.top.document.querySelector(':root')).getPropertyValue('--md-sys-color-source');
