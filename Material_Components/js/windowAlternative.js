@@ -5,7 +5,7 @@ let themeStyle = 'Sketch';
 
 let customWindow = {
     darkTheme: window.matchMedia("(prefers-color-scheme: dark)").matches,
-    themeColour: window.sessioNStorage.themeColour ?? colour,
+    themeColour: window.sessionStorage.themeColour ?? colour,
     colourGeneration: themeStyle
 };
 
