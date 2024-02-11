@@ -6,6 +6,7 @@ let themeStyle = 'Sketch';
 window.onload = function () {
     if (inIframe()) {
         colour = getComputedStyle(window.top.document.querySelector(':root')).getPropertyValue('--md-sys-color-source');
+        console.log(colour)
     }
 }
 
