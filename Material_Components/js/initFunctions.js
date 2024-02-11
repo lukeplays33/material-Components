@@ -7,17 +7,15 @@ let i = 0;
 let r = document.querySelector(':root');
 
 function initSettings(json) {
-	window.setTimeout(function () { // find beter alternative for this
-		let settings = Object.keys(json);
-		for (i = 0; i < settings.length; i++) {
-			let item = settings[i];
+	let settings = Object.keys(json);
+	for (i = 0; i < settings.length; i++) {
+		let item = settings[i];
 
-			customWindow[item] = json[item];
-			onSettingsChange(item);
-		}
+		customWindow[item] = json[item];
+		onSettingsChange(item);
+	}
 
-		generateColors();
-	}, 800);
+	generateColors();
 
 	return customWindow;
 }
