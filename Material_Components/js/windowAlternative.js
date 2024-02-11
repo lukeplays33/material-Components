@@ -3,7 +3,7 @@ import { inIframe } from '../utils/iframe.js';
 let colour = '#008dcd';
 let themeStyle = 'Sketch';
 
-window.onload = function () {
+window.self.onload = function () {
     if (inIframe()) {
         colour = getComputedStyle(window.top.document.querySelector(':root')).getPropertyValue('--md-sys-color-source');
         console.log(colour)
