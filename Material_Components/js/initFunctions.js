@@ -13,6 +13,7 @@ function initSettings(json) {
 
 		try {
 			customWindow[item] = window.sessionStorage.getItem('item');
+			alert(customWindow[item]);
 			window.sessionStorage.removeItem(item);
 		} catch(e) {
 
