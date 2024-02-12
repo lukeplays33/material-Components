@@ -9,11 +9,12 @@ let r = document.querySelector(':root');
 function initSettings(json) {
 	let settings = Object.keys(json);
 	for (i = 0; i < settings.length; i++) {
+		let item = settings[i];
+		
 		if ('themeColour' in window.sessionStorage) {
 			customWindow[item] = window.sessionStorage.getItem('item');
 			window.sessionStorage.removeItem(item);
 		} else {
-			let item = settings[i];
 
 			customWindow[item] = json[item];
 			window.sessionStorage[item] = json[item];
