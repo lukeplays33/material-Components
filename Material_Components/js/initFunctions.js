@@ -11,16 +11,9 @@ function initSettings(json) {
 	for (i = 0; i < settings.length; i++) {
 		let item = settings[i];
 
-		try {
-			customWindow[item] = window.sessionStorage.getItem('item');
-			alert(customWindow[item]);
-			window.sessionStorage.removeItem(item);
-		} catch(e) {
-
-			customWindow[item] = json[item];
-			window.sessionStorage[item] = json[item];
-			onSettingsChange(item);
-		}
+		customWindow[item] = json[item];
+		window.sessionStorage[item] = json[item];
+		onSettingsChange(item);
 	}
 
 	generateColors();
