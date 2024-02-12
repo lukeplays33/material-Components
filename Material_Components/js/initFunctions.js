@@ -9,11 +9,16 @@ let r = document.querySelector(':root');
 function initSettings(json) {
 	let settings = Object.keys(json);
 	for (i = 0; i < settings.length; i++) {
-		let item = settings[i];
+		if (window.sessionStorage[item]) {
+			customWindow[item] = window.sessionStorage.getItem('item');
+			window.sessionStorage.removeItem(item);
+		} else {
+			let item = settings[i];
 
-		customWindow[item] = json[item];
-		window.sessionStorage[item] = json[item];
-		onSettingsChange(item);
+			customWindow[item] = json[item];
+			window.sessionStorage[item] = json[item];
+			onSettingsChange(item);
+		}
 	}
 
 	generateColors();
@@ -22,21 +27,21 @@ function initSettings(json) {
 }
 
 function onSettingsChange(key) {
-	if(customWindow['colourGeneration'] == 'Sketch') { //check whether the custom colour geneartion should be used
+	if (customWindow['colourGeneration'] == 'Sketch') { //check whether the custom colour geneartion should be used
 
-	let priamryColour = window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container');
-	let mainColour;
+		let priamryColour = window.getComputedStyle(r).getPropertyValue('--md-sys-color-primary-container');
+		let mainColour;
 
-	if (key == 'darkTheme') {
-		if (customWindow[key]) { //check wheter black or white should be used
-			mainColour = '#000000';
-		} else {
-			mainColour = '#ffffff';
+		if (key == 'darkTheme') {
+			if (customWindow[key]) { //check wheter black or white should be used
+				mainColour = '#000000';
+			} else {
+				mainColour = '#ffffff';
+			}
+
+			r.style.setProperty('--md-sys-color-background', colourBlend(mainColour, priamryColour, 0.3));
 		}
-
-		r.style.setProperty('--md-sys-color-background', colourBlend(mainColour, priamryColour, 0.3));
 	}
-}
 }
 
 window.matchMedia('(prefers-color-scheme: dark)')
