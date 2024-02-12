@@ -9,5 +9,8 @@ let customWindow = {
     colourGeneration: themeStyle
 };
 
+window.onstorage = function () {
+    alert()
+}
 
 export { customWindow }
