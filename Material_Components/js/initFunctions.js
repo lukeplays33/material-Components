@@ -12,7 +12,7 @@ function initSettings(json) {
 		let item = settings[i];
 
 		customWindow[item] = json[item];
-		window.sessioNStorage[item] = json[item];
+		window.sessionStorage[item] = json[item];
 		onSettingsChange(item);
 	}
 
