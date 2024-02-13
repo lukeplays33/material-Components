@@ -5,6 +5,7 @@
 @import './css/footer.css';
 @import './css/chips.css';
 @import './css/header.css';
+@import './css/checkbox.css';
 
 * {
 	font-family:sans-serif;
@@ -251,7 +252,7 @@ a {
 
 main {
 	padding:16px;
-	
+
 	height:100%;
 }
 img {
