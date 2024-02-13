@@ -1,8 +1,8 @@
-cards * {
+card * {
 	background-color:var(--md-sys-color-on-primary-container);
 }
 
-.cards {
+.card {
 	border-radius:27px;
 
 	padding:8px;
