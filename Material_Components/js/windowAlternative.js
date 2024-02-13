@@ -14,4 +14,9 @@ window.onstorage = function () {
     generateColors();
 }
 
+window.onload = function () {
+    customWindow['themeColour'] = window.sessionStorage.themeColour;
+    generateColors();
+}
+
 export { customWindow }
