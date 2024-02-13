@@ -1,7 +1,3 @@
-card * {
-	background-color:var(--md-sys-color-on-primary-container);
-}
-
 .card {
 	border-radius:27px;
 
@@ -16,6 +12,7 @@ card * {
 	margin-bottom:16px;
 
 	color:var(--md-sys-color-on-primary-container);
+	background-color:var(--md-sys-color-primary-container);
 
 	transition: transform .2s; /* Animation */
 }
