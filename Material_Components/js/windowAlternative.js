@@ -5,16 +5,11 @@ let themeStyle = 'Sketch';
 
 let customWindow = {
     darkTheme: window.matchMedia("(prefers-color-scheme: dark)").matches,
-    themeColour: colour,
+    themeColour: window.sessionStorage.themeColour ?? colour,
     colourGeneration: themeStyle
 };
 
 window.onstorage = function () {
-    customWindow['themeColour'] = window.sessionStorage.themeColour;
-    generateColors();
-}
-
-window.onload = function () {
     customWindow['themeColour'] = window.sessionStorage.themeColour;
     generateColors();
 }
