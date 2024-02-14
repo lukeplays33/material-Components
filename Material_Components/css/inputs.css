@@ -128,7 +128,7 @@ input[type='file'] {
 
 /* hides the "choose file thingy" */
 
- input[type='radio']:checked,
+
  input[type='checkbox']:checked {
 	background-color: var(--md-sys-color-tertiary) !important;
 
@@ -139,7 +139,6 @@ input[type='file'] {
 appearance: none;
 }
 
- input[type='radio'],
  input[type='checkbox'] {
 	background-color:var(--md-sys-color-on-background) !important;
 

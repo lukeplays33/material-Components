@@ -32,8 +32,8 @@ html,body {
 
 
 select {
-  background-color:var(--md-sys-color-tertiary);
-  color:var(--md-sys-color-on-tertiary);
+  background-color:var(--md-sys-color-tertiary-container);
+  color:var(--md-sys-color-on-tertiary-container);
   border-radius:50px;
   border-width:0px;
   padding:14px;
