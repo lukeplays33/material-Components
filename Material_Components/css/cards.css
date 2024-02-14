@@ -49,13 +49,9 @@
 }
 
 .cardList:first-child {
-	background-color:var(--md-sys-color-tertiary-container);
-
 	border-radius:27px 27px 7px 7px;
 }
 
 .cardList:last-child {
-	background-color:var(--md-sys-color-primary-container);
-
 	border-radius:7px 7px 27px 27px;
 }
