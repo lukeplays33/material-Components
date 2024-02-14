@@ -142,7 +142,7 @@ appearance: none;
 }
 
  input[type='checkbox'] {
-	flex:0;
+	flex:0 !important;
 
 	width:20px;
 	height:20px;
