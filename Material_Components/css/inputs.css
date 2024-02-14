@@ -130,6 +130,8 @@ input[type='file'] {
 
 
  input[type='checkbox']:checked {
+	border-radius:4px;
+
 	background-color: var(--md-sys-color-tertiary) !important;
 
 	-webkit-appearance: none;
@@ -140,6 +142,8 @@ appearance: none;
 }
 
  input[type='checkbox'] {
+	border-radius:4px;
+	
 	background-color:var(--md-sys-color-on-background) !important;
 
 	-webkit-appearance: none;
