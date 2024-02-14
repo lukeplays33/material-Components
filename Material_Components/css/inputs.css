@@ -128,6 +128,28 @@ input[type='file'] {
 
 /* hides the "choose file thingy" */
 
+ input[type='radio']:checked,
+ input[type='checkbox']:checked {
+	background-color: var(--md-sys-color-tertiary) !important;
+
+	-webkit-appearance: none;
+-moz-appearance: none;
+-ms-appearance: none;
+-o-appearance: none;
+appearance: none;
+}
+
+ input[type='radio'],
+ input[type='checkbox'] {
+	background-color:var(--md-sys-color-on-background) !important;
+
+	-webkit-appearance: none;
+-moz-appearance: none;
+-ms-appearance: none;
+-o-appearance: none;
+appearance: none;
+}
+
 .star input[type='radio']:checked,
 .star input[type='checkbox']:checked {
 	background-color: var(--md-sys-color-tertiary) !important;
