@@ -1,5 +1,5 @@
 .card {
-	border-radius:17px;
+	border-radius:27px;
 
 	padding:8px;
 
@@ -21,13 +21,40 @@
 	transform: scale(1.05);
 }
 
-.cards:first-child {
+.card:nth-child(even) {
+	background-color:var(--md-sys-color-tertiary-container);
+}
+
+.card:nth-child(odd) {
+	background-color:var(--md-sys-color-primary-container);
+}
+
+.cardList {
+	border-radius:17px;
+
+	padding:8px;
+
+	display:flex;
+	flex-direction:row;
+
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom:16px;
+
+	color:var(--md-sys-color-on-primary-container);
+	background-color:var(--md-sys-color-primary-container);
+
+	transition: transform .2s; /* Animation */
+}
+
+.cardList:first-child {
 	background-color:var(--md-sys-color-tertiary-container);
 
 	border-radius:27px 27px 0px 0px;
 }
 
-.cards:last-child {
+.cardList:last-child {
 	background-color:var(--md-sys-color-primary-container);
 
 	border-radius:0px 0px 27px 27px;
