@@ -1,7 +1,7 @@
 .card {
 	border-radius:27px;
 
-	padding:8px;
+	padding:16px;
 
 	display:flex;
 	flex-direction:row;
@@ -32,7 +32,7 @@
 .cardList {
 	border-radius:7px;
 
-	padding:8px;
+	padding:16px;
 
 	display:flex;
 	flex-direction:row;
