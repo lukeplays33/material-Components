@@ -30,6 +30,7 @@ function onSettingsChange(key) {
 		if (key == 'darkTheme') {
 			if (customWindow[key]) { //check wheter black or white should be used
 				mainColour = '#000000';
+				alert()
 			} else {
 				mainColour = '#ffffff';
 			}
