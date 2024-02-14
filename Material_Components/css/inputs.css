@@ -143,14 +143,14 @@ appearance: none;
 
  input[type='checkbox'] {
 	flex:0;
-	
+
 	width:20px;
 	height:20px;
 
 	margin-right:8px;
 	border-radius:4px;
 
-	background-color:var(--md-sys-color-on-background) !important;
+	background-color:white !important;
 
 	-webkit-appearance: none;
 -moz-appearance: none;
