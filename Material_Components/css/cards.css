@@ -1,5 +1,5 @@
 .card {
-	border-radius:27px;
+	border-radius:17px;
 
 	padding:8px;
 
@@ -21,10 +21,14 @@
 	transform: scale(1.05);
 }
 
-.cards:nth-child(even) {
+.cards:first-child {
 	background-color:var(--md-sys-color-tertiary-container);
+
+	border-radius:27px 27px 0px 0px;
 }
 
-.cards:nth-child(odd) {
+.cards:last-child {
 	background-color:var(--md-sys-color-primary-container);
+
+	border-radius:0px 0px 27px 27px;
 }
